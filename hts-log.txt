@@ -1,13 +1,26 @@
-HTTrack3.49-2+htsswf+htsjava launched on Sat, 23 Sep 2023 13:43:52 at https://grubwebservice.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
-(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://grubwebservice.com/ -O1 "C:\My Web Sites\new ajay" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
-
-Information, Warnings and Errors reported for this mirror:
-note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
-	such as username/password authentication for websites mirrored in this project
-	do not share these files/folders if you want these information to remain private
-
-13:45:47	Warning: 	Link https://grubwebservice.com/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
-13:45:47	Error: 	"Not Found" (404) at link https://grubwebservice.com/social-media (from https://grubwebservice.com/)
-13:46:20	Error: 	"Not Found" (404) at link https://grubwebservice.com/css2 (from https://grubwebservice.com/assets/css/style.css)
-13:46:20	Error: 	"Not Found" (404) at link https://grubwebservice.com/assets/img/breadcrum/ab-1.1.jpg (from https://grubwebservice.com/services)
-13:46:20	Error: 	"Not Found" (404) at link https://grubwebservice.com/service-details.html (from https://grubwebservice.com/about-us)
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 23 Sep 2023 13:43:52 at https://codeservir.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+codeservir
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://grubwebservice.com/ -O1 "C:\My Web Sites\new ajay" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+
+
+Information, Warnings and Errors reported for this mirror:
+
+note:	the hts-log.txt file, and codeservirer, may contain sensitive information,
+codeservircodeservir
+	such as username/password authentication for websicodeservirn this projectcodeservir
+codeservircodeservir
+	do not share these files/folders if you want thesecodeserviro remain privatecodeservir
+
+
+
+13:45:47	Warning: 	Link https://grubwebservice.com/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+
+13:45:47	Error: 	"Not Found" (404) at link https://grubwebservice.com/social-media (from https://grubwebservice.com/)
+
+13:46:20	Error: 	"Not Found" (404) at link https://grubwebservice.com/css2 (from https://grubwebservice.com/assets/css/style.css)
+
+13:46:20	Error: 	"Not Found" (404) at link https://grubwebservice.com/assets/img/breadcrum/ab-1.1.jpg (from https://grubwebservice.com/services)
+
+13:46:20	Error: 	"Not Found" (404) at link https://grubwebservice.com/service-details.html (from https://grubwebservice.com/about-us)
+

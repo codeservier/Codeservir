@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "codeservir.com",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
