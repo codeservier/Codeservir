@@ -1,145 +1,221 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 
-<!-- Hello everuone -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
-<!-- Mirrored from Codeservirservice.com/index by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 23 Sep 2023 08:15:35 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Codeservir Service</title>
-<meta name="description" content="Revolutionize Your Online Presence with Cutting-Edge Digital Marketing! Dive into Best SEO, Social Media Mastery, PPC Wizardry, and More. Skyrocket Your Website's Traffic, Transform Leads into Loyal Customers, and Amplify ROI. Explore a World of Proven Strategies and Innovations – Only at Codeservir service">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="shortcut icon" type="image/x-icon" href="Codeservirservice-favicon.png">
+  <style>
+    /* Popup container */
+    .popup {
+      display: none;
+      /* Hide the popup by default */
+      position: fixed;
+      /* Position the popup relative to the viewport */
+      top: 50%;
+      /* Center the popup vertically */
+      left: 50%;
+      /* Center the popup horizontally */
+      transform: translate(-50%, -50%);
+      /* Center the popup exactly */
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      /* Ensure the popup is above other content */
+    }
 
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/animate.css">
-<link rel="stylesheet" href="assets/css/custom-animation.css">
-<link rel="stylesheet" href="assets/css/swiper-bundle.css">
-<link rel="stylesheet" href="assets/css/slick.css">
-<link rel="stylesheet" href="assets/css/flaticon.css">
-<link rel="stylesheet" href="assets/css/meanmenu.css">
-<link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-<link rel="stylesheet" href="assets/css/magnific-popup.css">
-<link rel="stylesheet" href="assets/css/spacing.css">
-<link rel="stylesheet" href="assets/css/style.css">
+    /* Close button */
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    /* Popup content */
+
+    .popup-content {
+      max-height: 70vh;
+      /* Adjust the height as needed */
+      overflow-y: auto;
+    }
+
+
+    /* Form styling */
+    form {
+      display: grid;
+      gap: 10px;
+    }
+
+    label {
+
+      text-align: start;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="file"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Codeservir Service</title>
+  <meta name="description"
+    content="Revolutionize Your Online Presence with Cutting-Edge Digital Marketing! Dive into Best SEO, Social Media Mastery, PPC Wizardry, and More. Skyrocket Your Website's Traffic, Transform Leads into Loyal Customers, and Amplify ROI. Explore a World of Proven Strategies and Innovations – Only at Codeservir service">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" type="image/x-icon" href="Codeservirservice-favicon.png">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/custom-animation.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/flaticon.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.css">
+  <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/spacing.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-<!--[if lte IE 9]>
+  <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
       <![endif]-->
 
-<header class="d-none d-lg-block">
-<div id="header-sticky" class="tp-header-area-two tp-header-bg header-transparent header-transparent-two">
-<div class="container-fluid">
-<div class="row align-items-center">
-<div class="col-xxl-3 col-xl-3 col-lg-3">
-<div class="tp-logo text-start">
-<a href="index.html"><img src="logo.png" alt></a>
-</div>
-</div>
-<div class="col-xxl-6 col-xl-6 col-lg-6">
-<div class="tp-main-menu tp-menu-black tp-bs-menu tp-bp-menu text-center">
-<nav id="mobile-menu">
-<ul>
+  <header class="d-none d-lg-block">
+    <div id="header-sticky" class="tp-header-area-two tp-header-bg header-transparent header-transparent-two">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-xxl-3 col-xl-3 col-lg-3">
+            <div class="tp-logo text-start">
+              <a href="index.html"><img src="logo.png" alt></a>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6">
+            <div class="tp-main-menu tp-menu-black tp-bs-menu tp-bp-menu text-center">
+              <nav id="mobile-menu">
+                <ul>
 
 
-<li><a href="index.html">Home</a></li>
-<li class="has-dropdown"><a href="services.html">Services</a>
-<ul class="submenu text-start">
-<li><a href="web-designing.html">Website Designing/Development</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li class="has-dropdown"><a href="services.html">Services</a>
+                    <ul class="submenu text-start">
+                      <li><a href="web-designing.html">Website Designing/Development</a></li>
 
 
-<li>
-  <a href="app-development.html">App Development</a>
-
-
-
-</li>
+                      <li>
+                        <a href="app-development.html">App Development</a>
 
 
 
-
-
-<li><a href="app-development.html">Tech Consultation</a></li>
-<li><a href="app-development.html">Cloud Solutions</a></li>
-<li><a href="search-engine-optimization.html">Search Engine Optimization</a></li>
-<li><a href="social-media-marketing.html">Digital Marketing</a></li>
-<li><a href="graphic-designing.html">Graphic Designing</a></li>
-<li><a href="app-development.html">Video Editing/Figma</a></li>
-<li><a href="app-development.html">Content Creation</a></li>
-
-
-<li><a href="website-maintenance.html">Website Maintenance</a></li>
-</ul>
+                      </li>
 
 
 
-</li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="blogs.html">Blogs</a></li>
-<li><a href="about-us.html">About Us</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</div>
-</div>
-<div class="col-xxl-3 col-xl-3 col-lg-3">
-<div class="tp-header-yellow-button tp-yellow-space">
-<a class="tp-btn-black" href="contact.html">Let's Connect👋</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</header>
 
-<div id="header-sticky-mobile" class="tp-md-header-area d-md-block d-lg-none pt-30 pb-30">
-<div class="container-fluid">
-<div class="row align-items-center">
-<div class="col-md-6 col-6">
-<div class="tp-logo">
-<a href="index.html"><img src="logo.png" alt></a>
-</div>
-</div>
-<div class="col-md-6 col-6">
-<div class="tp-header-right z-index-1 d-flex align-items-center justify-content-end">
-<a class="tp-btn-yellow d-none d-md-block" href="contact.html">Get in Touch</a>
-<button class="tp-menu-bar"><i class="fal fa-bars"></i></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="tp-offcanvas-area">
-<div class="tpoffcanvas">
-<div class="tpoffcanvas__logo">
-<a href="index.html">
-<img src="logo.png" alt>
-</a>
-</div>
-<div class="tpoffcanvas__close-btn">
-<a class="close-btn" href="javascript:void(0)"><i class="fal fa-times-hexagon"></i></a>
-</div>
-<div class="tpoffcanvas__content d-none d-sm-block">
-<p>Complete End to End Tech Solutions Company</p>
-</div>
-<div class="mobile-menu">
-</div>
-<div class="tpoffcanvas__contact">
-<span>Contact us</span>
-<ul>
-  <li><strong>Call Us:</strong><br>
-  <a href="tel:+919455791624"><i class="far flaticon-customer-support"></i> +91-9455791624</a><br>
-  <a href="tel:+918386963382"><i class="far flaticon-customer-support"></i> +91-8386963382</a>
-  </li>
-  <li><strong>Email Us:</strong><br>
-    <a href="mailto:info@codeservir.com"><i class="far flaticon-customer-support"></i> info@codeservir.com</a><br>
-    <a href="mailto:codeservir@gmail.com"><i class="far flaticon-customer-support"></i> codeservir@gmail.com</a>
-  </li>
-  <!-- <li><strong>Email Us:</strong><br>
+
+                      <li><a href="app-development.html">Tech Consultation</a></li>
+                      <li><a href="app-development.html">Cloud Solutions</a></li>
+                      <li><a href="search-engine-optimization.html">Search Engine Optimization</a></li>
+                      <li><a href="social-media-marketing.html">Digital Marketing</a></li>
+                      <li><a href="graphic-designing.html">Graphic Designing</a></li>
+                      <li><a href="app-development.html">Video Editing/Figma</a></li>
+                      <li><a href="app-development.html">Content Creation</a></li>
+
+
+                      <li><a href="website-maintenance.html">Website Maintenance</a></li>
+                    </ul>
+
+
+
+                  </li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="blogs.html">Blogs</a></li>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-xl-3 col-lg-3">
+            <div class="tp-header-yellow-button tp-yellow-space">
+              <a class="tp-btn-black" href="contact.html">Let's Connect👋</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="header-sticky-mobile" class="tp-md-header-area d-md-block d-lg-none pt-30 pb-30">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-6">
+          <div class="tp-logo">
+            <a href="index.html"><img src="logo.png" alt></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-6">
+          <div class="tp-header-right z-index-1 d-flex align-items-center justify-content-end">
+            <a class="tp-btn-yellow d-none d-md-block" href="contact.html">Get in Touch</a>
+            <button class="tp-menu-bar"><i class="fal fa-bars"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tp-offcanvas-area">
+    <div class="tpoffcanvas">
+      <div class="tpoffcanvas__logo">
+        <a href="index.html">
+          <img src="logo.png" alt>
+        </a>
+      </div>
+      <div class="tpoffcanvas__close-btn">
+        <a class="close-btn" href="javascript:void(0)"><i class="fal fa-times-hexagon"></i></a>
+      </div>
+      <div class="tpoffcanvas__content d-none d-sm-block">
+        <p>Complete End to End Tech Solutions Company</p>
+      </div>
+      <div class="mobile-menu">
+      </div>
+      <div class="tpoffcanvas__contact">
+        <span>Contact us</span>
+        <ul>
+          <li><strong>Call Us:</strong><br>
+            <a href="tel:+919455791624"><i class="far flaticon-customer-support"></i> +91-9455791624</a><br>
+            <a href="tel:+918386963382"><i class="far flaticon-customer-support"></i> +91-8386963382</a>
+          </li>
+          <li><strong>Email Us:</strong><br>
+            <a href="mailto:info@codeservir.com"><i class="far flaticon-customer-support"></i>
+              info@codeservir.com</a><br>
+            <a href="mailto:codeservir@gmail.com"><i class="far flaticon-customer-support"></i> codeservir@gmail.com</a>
+          </li>
+          <!-- <li><strong>Email Us:</strong><br>
   <a href="#">
         
         <i>
@@ -159,131 +235,138 @@
         </i>
   </a>
   </li> -->
-  </ul>
-</div>
-<div class="tpoffcanvas__input d-none d-sm-block">
-<p>Get UPdate</p>
-<form class="p-relative" action="#">
-<input type="text" placeholder="Enter mail">
-<button type="submit"><i class="fas fa-paper-plane"></i></button>
-</form>
-</div>
+        </ul>
+      </div>
+      <div class="tpoffcanvas__input d-none d-sm-block">
+        <p>Get UPdate</p>
+        <form class="p-relative" action="#">
+          <input type="text" placeholder="Enter mail">
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
 
-</div>
-</div>
+    </div>
+  </div>
 
-<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-H9XCTBNZFM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9XCTBNZFM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-H9XCTBNZFM');
-</script>
+    gtag('config', 'G-H9XCTBNZFM');
+  </script>
 
-<main>
-<div class="tp-hero-area-two  pt-130 p-relative fix">
-<div class="tp-hero-yellow-shape d-none d-lg-block"></div>
-<div class="ce-hero-shape d-none d-lg-block">
-<img src="assets/img/hero/hero-shape-4.png" alt>
-</div>
-<div class="ce-hero-shape-two d-none d-lg-block">
-<img src="assets/img/hero/hero-shape-4.1.png" alt>
-</div>
-<div class="container">
-<div class="row">
-<div class="col-xl-6 col-lg-6">
-<div class="tp-hero-section-box tp-hero-section-box-four pt-120 pb-140">
-<h3 class="tp-hero-bd-title text-black wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".6s">Meet Innovation
-<span class="tp-highlight">
-<svg width="266" height="12" viewBox="0 0 266 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 0L266 12H0V0Z" fill="#FFDC60" />
-</svg>
-<i>With Execution,</i>
-</span>
-Futuristic Solutions 
-</h3>
-<p class="wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">Believe in Delivering Futuristic Solutions to Modern Problems.</p>
-<div class="tp-hero-three-button-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
-<a class="tp-btn mr-55" href="contact.html">Connect with us!</a>
-<a class="tp-btn-grey" href="about-us.html">About us <i class="far fa-arrow-right"></i></a>
+  <main>
+    <div class="tp-hero-area-two  pt-130 p-relative fix">
+      <div class="tp-hero-yellow-shape d-none d-lg-block"></div>
+      <div class="ce-hero-shape d-none d-lg-block">
+        <img src="assets/img/hero/hero-shape-4.png" alt>
+      </div>
+      <div class="ce-hero-shape-two d-none d-lg-block">
+        <img src="assets/img/hero/hero-shape-4.1.png" alt>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6">
+            <div class="tp-hero-section-box tp-hero-section-box-four pt-120 pb-140">
+              <h3 class="tp-hero-bd-title text-black wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".6s">Meet
+                Innovation
+                <span class="tp-highlight">
+                  <svg width="266" height="12" viewBox="0 0 266 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L266 12H0V0Z" fill="#FFDC60" />
+                  </svg>
+                  <i>With Execution,</i>
+                </span>
+                Futuristic Solutions
+              </h3>
+              <p class="wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">Believe in Delivering Futuristic
+                Solutions to Modern Problems.</p>
+              <div class="tp-hero-three-button-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".7s"
+                data-wow-delay=".9s">
+                <a class="tp-btn mr-55" href="contact.html">Connect with us!</a>
+                <a class="tp-btn-grey" href="about-us.html">About us <i class="far fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="tp-hero-social pb-90 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
+              <div class="tp-hero-social bp-hero-social">
+                <a class="social-icon-1"
+                  href="https://www.linkedin.com/company/codeservir-technologies-private-limited/"><i
+                    class="fab fa-facebook-f social-icon-1"></i><span>Linkedin</span></a>
+                <a class="social-icon-3" href="https://twitter.com/CodeServir"><i
+                    class="fab fa-instagram social-icon-3"></i><span>Twitter</span></a>
 
-</div>
-</div>
-<div class="tp-hero-social pb-90 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
-<div class="tp-hero-social bp-hero-social">
-<a class="social-icon-1" href="#"><i class="fab fa-facebook-f social-icon-1"></i><span>Linkedin</span></a>
-<a class="social-icon-3" href="#"><i class="fab fa-instagram social-icon-3"></i><span>Twitter</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 wow fadeInRight" data-wow-duration=".7s" data-wow-delay=".9s">
+            <div class="tp-hero-right-img-four pt-70" style="margin-right: px;">
+              <img src="assets/img/hero/hero-5.png" style="margin-right: 100px;" alt>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</div>
-</div>
-</div>
-<div class="col-xl-6 col-lg-6 wow fadeInRight" data-wow-duration=".7s" data-wow-delay=".9s">
-<div class="tp-hero-right-img-four pt-90">
-<img src="assets/img/hero/hero-5.png" alt>
-</div>
-</div>
-</div>
-</div>
-</div>
+    <div class="ac-feature-area pt-125 pb-120">
+      <div class="container">
+        <div class="row ac-feature-space">
+          <div class="col-xl-6 col-lg-6">
+            <div class="ac-feature-left">
+              <h3 class="ac-feature-title">Turn Your Innovation Into Reality</h3>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6">
+            <div class="ac-feature-right">
+              <p class="pb-25">we believe that innovation and creativity drives the future. We are working closely with
+                the ideators on innovative technologies to meet client's requirements.</p>
+            </div>
+          </div>
+        </div>
+        <div class="ac-feature-border-top">
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div class="acfeature mb-50">
+                <div class="ac-circle"></div>
+                <div class="acfeature__item">
+                  <h3 class="ac-feature-sm-title"><a href="#">Requirement Specification </a></h3>
 
-<div class="ac-feature-area pt-125 pb-120">
-<div class="container">
-<div class="row ac-feature-space">
-<div class="col-xl-6 col-lg-6">
-<div class="ac-feature-left">
-<h3 class="ac-feature-title">Turn Your Innovation Into Reality</h3>
-</div>
-</div>
-<div class="col-xl-6 col-lg-6">
-<div class="ac-feature-right">
-<p class="pb-25">we believe that innovation and creativity drives the future. We are working closely with the ideators on innovative technologies to meet client's requirements.</p>
-</div>
-</div>
-</div>
-<div class="ac-feature-border-top">
-<div class="row">
-<div class="col-xl-3 col-lg-3 col-md-6">
-<div class="acfeature mb-50">
-<div class="ac-circle"></div>
-<div class="acfeature__item">
-<h3 class="ac-feature-sm-title"><a href="#">Requirement Specification </a></h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div class="acfeature mb-50">
+                <div class="ac-circle ac-cirle-color-2"></div>
+                <div class="acfeature__item">
+                  <h3 class="ac-feature-sm-title ac-cirle-color-2"><a href="#">Designing</a></h3>
 
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-3 col-md-6">
-<div class="acfeature mb-50">
-<div class="ac-circle ac-cirle-color-2"></div>
-<div class="acfeature__item">
-<h3 class="ac-feature-sm-title ac-cirle-color-2"><a href="#">Designing</a></h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div class="acfeature mb-50">
+                <div class="ac-circle ac-cirle-color-3"></div>
+                <div class="acfeature__item">
+                  <h3 class="ac-feature-sm-title ac-cirle-color-3"><a href="#">Coding</a></h3>
 
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-3 col-md-6">
-<div class="acfeature mb-50">
-<div class="ac-circle ac-cirle-color-3"></div>
-<div class="acfeature__item">
-<h3 class="ac-feature-sm-title ac-cirle-color-3"><a href="#">Coding</a></h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div class="acfeature mb-50">
+                <div class="ac-circle ac-cirle-color-4"></div>
+                <div class="acfeature__item">
+                  <h3 class="ac-feature-sm-title ac-cirle-color-4"><a href="#">Testing​</a></h3>
 
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-3 col-md-6">
-<div class="acfeature mb-50">
-<div class="ac-circle ac-cirle-color-4"></div>
-<div class="acfeature__item">
-<h3 class="ac-feature-sm-title ac-cirle-color-4"><a href="#">Testing​</a></h3>
-
-</div>
-</div>
-</div>
+                </div>
+              </div>
+            </div>
 
 
 
 
-<!-- <div class="ac-feature-border-top">
+            <!-- <div class="ac-feature-border-top">
   <div class="row">
   <div class="col-xl-3 col-lg-3 col-md-6">
   <div class="acfeature mb-50">
@@ -296,393 +379,523 @@ Futuristic Solutions
   </div> -->
 
 
-  <div class="col-xl-3 col-lg-3 col-md-6">
-    <div class="acfeature mb-50">
-    <div class="ac-circle ac-cirle-color-4"></div>
-    <div class="acfeature__item">
-    <h3 class="ac-feature-sm-title ac-cirle-color-4"><a href="#">Deploying​</a></h3>
-    
-    </div>
-    </div>
-    </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div class="acfeature mb-50">
+                <div class="ac-circle ac-cirle-color-4"></div>
+                <div class="acfeature__item">
+                  <h3 class="ac-feature-sm-title ac-cirle-color-4"><a href="#">Deploying​</a></h3>
+
+                </div>
+              </div>
+            </div>
 
 
-    <div class="col-xl-3 col-lg-3 col-md-6">
-      <div class="acfeature mb-50">
-      <div class="ac-circle ac-cirle-color-3"></div>
-      <div class="acfeature__item">
-      <h3 class="ac-feature-sm-title ac-cirle-color-4"><a href="#"> Support </a></h3>
-      
-      </div>
-      </div>
-      </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div class="acfeature mb-50">
+                <div class="ac-circle ac-cirle-color-3"></div>
+                <div class="acfeature__item">
+                  <h3 class="ac-feature-sm-title ac-cirle-color-4"><a href="#"> Support </a></h3>
+
+                </div>
+              </div>
+            </div>
 
 
-      <div class="col-xl-3 col-lg-3 col-md-6">
-        <div class="acfeature mb-50">
-        <div class="ac-circle ac-cirle-color-"></div>
-        <div class="acfeature__item">
-        <h3 class="ac-feature-sm-title ac-cirle-color-4"><a href="#">Security</a></h3>
-        
-        </div>
-        </div>
-        </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div class="acfeature mb-50">
+                <div class="ac-circle ac-cirle-color-"></div>
+                <div class="acfeature__item">
+                  <h3 class="ac-feature-sm-title ac-cirle-color-4"><a href="#">Security</a></h3>
+
+                </div>
+              </div>
+            </div>
 
 
-        <div class="col-xl-3 col-lg-3 col-md-6">
-          <div class="acfeature mb-50">
-          <div class="ac-circle ac-cirle-color-2"></div>
-          <div class="acfeature__item">
-          <h3 class="ac-feature-sm-title ac-cirle-color-2"><a href="#">Maintenence</a></h3>
-          
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div class="acfeature mb-50">
+                <div class="ac-circle ac-cirle-color-2"></div>
+                <div class="acfeature__item">
+                  <h3 class="ac-feature-sm-title ac-cirle-color-2"><a href="#">Maintenence</a></h3>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
           </div>
-          </div>
-          </div>
-
-
-
-
-
-
-</div>
-</div>
-</div>
-</div>
-
-<div class="tp-service-area pb-120">
-<div class="container">
-<div class="row">
-<div class="col-xl-12">
-<div class="tp-service-section-box text-center pb-35">
-<h5 class="tp-subtitle">Core Services</h5>
-<h2 class="tp-title">Get One Stop Solution
-<span class="tp-section-highlight">
-to all Complex Applications
-<svg class="wow" width="290" height="11" viewBox="0 0 290 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 0L290 11H0V0Z" fill="#FFDC60" />
-</svg>
-</span>
-</h2>
-</div>
-</div>
-</div>
-
-
-<div class="row gx-2">
-  <div class="col-xl-4 col-md-6">
-    <div class="tp-services-item text-center service-color-1 mb-30  wow tpfadeUp" data-wow-duration="1s" data-wow-delay=".3s">
-      <div class="tp-services-item__icon mb-35">
-        <img src="assets/img/service/istockphoto-1395990328-612x612.png" alt style="width: 150px; height: 150px;"> <!-- Adjust the width and height as needed -->
-      </div>
-      <div class="tp-services-item__content">
-        <h3 class="tp-sv-title"><a href="web-designing.html">Web <br>Designing</a></h3>
-        <p>We Plan, Design and Code Futuristic Web solutions. </p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col-xl-4 col-md-6">
-    <div class="tp-services-item text-center service-color-2 mb-30 wow tpfadeUp" data-wow-duration="1s" data-wow-delay=".5s">
-      <div class="tp-services-item__icon mb-35">
-        <img src="assets/img/service/mobile-dynamic-premium.png" alt style="width: 150px; height: 150px;"> <!-- Adjust the width and height as needed -->
-      </div>
-      <div class="tp-services-item__content">
-        <h3 class="tp-sv-title"><a href="search-engine-optimization.html">App Development</a></h3>
-        <p>Get one stop solution to all your complex Android and IOS applications according to client requirements.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-xl-4 col-md-6">
-    <div class="tp-services-item text-center service-color-3 mb-30 wow tpfadeUp" data-wow-duration="1s" data-wow-delay=".7s">
-      <div class="tp-services-item__icon mb-35">
-        <img src="assets/img/service/service-7.png" alt style="width: 50px; height: 50px;"> <!-- Adjust the width and height as needed -->
-      </div>
-      <div class="tp-services-item__content">
-        <h3 class="tp-sv-title"><a href="social-media.html">Tech Consultation</a></h3>
-        <p>Confused about Modern Technical Requirements? Reach out to us! We Plan Innovative cutting edge technologies according to client's business.</p>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-<div class="col-xl-12 wow tpfadeUp" data-wow-duration="1s" data-wow-delay=".5s">
-<div class="tp-service-button text-center pt-55">
-<a class="tp-btn" href="services.html">View All Services <i class="far fa-arrow-right"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="tp-news-area black-bg fix">
-<div class="container">
-<div class="row align-items-end flex-wrap-reverse flex-md-wrap">
-<div class="col-xl-6 col-lg-6 col-md-6">
-<div class="tp-newsletter-left-img pt-60 p-relative wow tpfadeLeft" data-wow-duration=".3s" data-wow-delay=".5s">
-<div class="z-index"> <img src="assets/img/news/news-2.png" alt></div>
-<div class="news-shape-img">
-<img src="assets/img/creative/creative-circle-img.png" alt>
-</div>
-</div>
-</div>
-<div class="col-xl-6 col-lg-6 col-md-6">
-<div class="tp-news-letter-section-box-two pt-135 pb-145 wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">
-<h5 class="tp-subtitle">Need a Project ?</h5>
-<h2 class="tp-title tp-white-text pb-10">Let's work together.</h2>
-<a class="tp-btn-border" href="contact.html">Fix a Meeting </a>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="tp-project-area pt-120 pb-120 p-relative">
-<div class="tp-project-shape-one">
-<img src="assets/img/project/project-shape-2.png" alt>
-</div>
-<div class="tp-project-shape-two">
-<img src="assets/img/project/project-shape-3.png" alt>
-</div>
-<div class="container">
-<div class="row">
-<div class="col-xl-12">
-<div class="project-section-box-two text-center pb-20">
-<h5 class="tp-subtitle">Projects</h5>
-<h2 class="tp-title">Creative work.</h2>
-</div>
-</div>
-</div>
-<div class="row justify-content-center mb-80">
-<div class="col-10 p-0 text-center">
-<div class="tp-project-tab-button masonary-menu">
-<button class="active" data-filter="*"><span>Website</span></button>
-<button data-filter=".cat2"><span>Landing Page</span></button>
-<button data-filter=".cat3"><span>App</span></button>
-<button data-filter=".cat4"><span>Designing</span></button>
-</div>
-</div>
-</div>
-<div class="row grid gx-45">
-<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6  grid-item cat2 cat4">
-<div class="tp-project-item-two p-relative mb-45">
-<div class="project-one fix"><img class="w-100" src="assets/img/work/affinitysky.webp" alt></div>
-<div class="tp-project-icon-two">
-<a class="popup-image" href="assets/img/work/affinitysky.webp"><i class="fas fa-long-arrow-up"></i></a>
-</div>
-</div>
-</div>
-<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 grid-item cta2 cat4">
-<div class="tp-project-item-two p-relative mb-45">
-<div class="project-one fix"> <img class="w-100" src="assets/img/work/aksharamevents.webp" alt></div>
-<div class="tp-project-icon-two">
-<a class="popup-image" href="assets/img/work/aksharamevents.webp"><i class="fas fa-long-arrow-up"></i></a>
-</div>
-</div>
-</div>
-<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 grid-item cat2 cat4">
-<div class="tp-project-item-two p-relative  mb-45">
-<div class=" project-one fix"> <img class="w-100" src="assets/img/work/bollywoodbeta.webp" alt></div>
-<div class="tp-project-icon-two">
-<a class="popup-image" href="assets/img/work/bollywoodbeta.webp"><i class="fas fa-long-arrow-up"></i></a>
-</div>
-</div>
-</div>
-<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 grid-item cat2 cat4">
-<div class="tp-project-item-two  p-relative mb-45">
-<div class="project-one fix"> <img class="w-100" src="assets/img/work/graspex.webp" alt></div>
-<div class="tp-project-icon-two">
-<a class="popup-image" href="assets/img/work/graspex.webp"><i class="fas fa-long-arrow-up"></i></a>
-</div>
-</div>
-</div>
-<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 grid-item cat2 cat4">
-<div class="tp-project-item-two  p-relative mb-45">
-<div class="project-one fix"> <img class="w-100" src="assets/img/work/greenwatch.webp" alt></div>
-<div class="tp-project-icon-two">
-<a class="popup-image" href="assets/img/work/greenwatch.webp"><i class="fas fa-long-arrow-up"></i></a>
-</div>
-</div>
-</div>
-<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 grid-item cat2 cat4">
-<div class="tp-project-item-two  p-relative mb-45">
-<div class="project-one fix"> <img class="w-100" src="assets/img/work/grubhosting.webp" alt></div>
-<div class="tp-project-icon-two">
-<a class="popup-image" href="assets/img/work/grubhosting.webp"><i class="fas fa-long-arrow-up"></i></a>
-</div>
-</div>
-</div>
-<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 grid-item cat2 cat4">
-<div class="tp-project-item-two  p-relative mb-45">
-<div class="project-one fix"> <img class="w-100" src="assets/img/work/knits%26knots.webp" alt></div>
-<div class="tp-project-icon-two">
-<a class="popup-image" href="assets/img/work/knits%26knots.webp"><i class="fas fa-long-arrow-up"></i></a>
-</div>
-</div>
-</div>
-<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 grid-item cat2 cat4">
-<div class="tp-project-item-two  p-relative mb-45">
-<div class="project-one fix"> <img class="w-100" src="assets/img/work/resettleworldwide.webp" alt></div>
-<div class="tp-project-icon-two">
-<a class="popup-image" href="assets/img/work/resettleworldwide.webp"><i class="fas fa-long-arrow-up"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-12">
-<div class="tp-project-button text-center mt-25">
-<a class="tp-btn" href="projects.html">View All Work</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-</main>
-
-
-<footer>
-<div class="tp-footer-area black-bg pt-130 pb-30">
-<div class="container">
-<div class="row wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".5s">
-<div class="col-xl-6 col-lg-4 col-md-6">
-<div class="tp-footer-widget">
-<div class="tp-footer-widget__logo mb-30">
-<a href="index.html"><img src="logo.png" alt></a>
-</div>
-<div class="tp-footer-widget__text mb-30">
-<p>CodeServir is a family of futuristic solutions with complete End to End  Web Development, App Development, Designing, UI/UX, Tech Consultation, Search Engine Optimization, Social Media Marketing, Content Creation, Cloud Solutios and many more services  .</p>
-</div>
-<div class="tp-footer-widget__social-link">
-<a target="_blank" href="https://twitter.com/CodeServir"><i class="fab fa-twitter"></i></a>
-<a target="_blank" href="https://www.instagram.com/codeservir/"><i class="fab fa-instagram"></i></a>
-<a target="_blank" href="https://www.linkedin.com/company/codeservir-technologies-private-limited/"><i class="fab fa-linkedin"></i></a>
-
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 d-flex justify-content-lg-center">
-<div class="tp-footer-widget">
-<div class="tp-footer-widget__title pb-15">
-<h3 class="footer-title">Links</h3>
-</div>
-<div class="tp-footer-widget__list">
-<ul>
-<li><a href="#">About Us</a></li>
-<li><a href="#">Our Team</a></li>
-<li><a href="#">Projects</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">Contact Us</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6">
-<div class="tp-footer-widget pl-20">
-<div class="tp-footer-widget__title pb-15">
-<h3 class="footer-title">Get in Touch</h3>
-</div>
-<div class="tp-footer-widget__list">
-  <ul>
-    <li><strong>Call Us:</strong><br>
-    <a href="tel:+919455791624"><i class="far flaticon-customer-support"></i> +91-9455791624</a><br>
-    <a href="tel:+918386963382"><i class="far flaticon-customer-support"></i> +91-8386963382</a>
-    </li>
-    <li><strong>Email Us:</strong><br>
-    <a href="#">
-          
-          <i>
-                <span>
-                      info@codeservir.com ,
-    
+    <div class="tp-service-area pb-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="tp-service-section-box text-center pb-35">
+              <h5 class="tp-subtitle">Core Services</h5>
+              <h2 class="tp-title">Get One Stop Solution
+                <span class="tp-section-highlight">
+                  to all Complex Applications
+                  <svg class="wow" width="290" height="11" viewBox="0 0 290 11" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L290 11H0V0Z" fill="#FFDC60" />
+                  </svg>
                 </span>
-          </i>
-    </a>
-    <a href="#">
-          
-          <i>
-                <span>
-                      codeservir@gmail.com
-    
-                </span>
-          </i>
-    </a>
-    </li>
-    </ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="tp-copyright-area">
-<div class="container">
-<div class="copyright-border pt-40 wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">
-<div class="row">
-<div class="col-xl-6 col-lg-6 col-12">
-<div class="tp-copyright-left text-lg-start text-start text-md-center">
-<p> © Copyright ©2023 Code Servir. All Rights Reserved.</p>
-</div>
-</div>
-<div class="col-xl-6 col-lg-6 col-12">
-<div class="tp-copyright-right text-start text-md-center text-lg-end">
-<a href="#">Cancellation & refund policy</a>
-<a href="#">Terms and conditions</a>
-<a href="#">Privacy policy</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</footer>
+              </h2>
+            </div>
+          </div>
+        </div>
 
 
-<button class="scroll-top scroll-to-target" data-target="html">
-<i class="far fa-angle-double-up"></i>
-</button>
+        <div class="row gx-2">
+          <div class="col-xl-4 col-md-6">
+            <div class="tp-services-item text-center service-color-1 mb-30  wow tpfadeUp" data-wow-duration="1s"
+              data-wow-delay=".3s">
+              <div class="tp-services-item__icon mb-35">
+                <img src="assets/img/service/istockphoto-1395990328-612x612.png" alt
+                  style="width: 150px; height: 150px;"> <!-- Adjust the width and height as needed -->
+              </div>
+              <div class="tp-services-item__content">
+                <h3 class="tp-sv-title"><a href="web-designing.html">Web <br>Designing</a></h3>
+                <p>We Plan, Design and Code Futuristic Web solutions. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="tp-services-item text-center service-color-2 mb-30 wow tpfadeUp" data-wow-duration="1s"
+              data-wow-delay=".5s">
+              <div class="tp-services-item__icon mb-35">
+                <img src="assets/img/service/mobile-dynamic-premium.png" alt style="width: 150px; height: 150px;">
+                <!-- Adjust the width and height as needed -->
+              </div>
+              <div class="tp-services-item__content">
+                <h3 class="tp-sv-title"><a href="search-engine-optimization.html">App Development</a></h3>
+                <p>Get one stop solution to all your complex Android and IOS applications according to client
+                  requirements.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="tp-services-item text-center service-color-3 mb-30 wow tpfadeUp" data-wow-duration="1s"
+              data-wow-delay=".7s">
+              <div class="tp-services-item__icon mb-35">
+                <img src="assets/img/service/service-7.png" alt style="width: 50px; height: 50px;">
+                <!-- Adjust the width and height as needed -->
+              </div>
+              <div class="tp-services-item__content">
+                <h3 class="tp-sv-title"><a href="social-media.html">Tech Consultation</a></h3>
+                <p>Confused about Modern Technical Requirements? Reach out to us! We Plan Innovative cutting edge
+                  technologies according to client's business.</p>
+              </div>
+            </div>
+          </diPv>
+        </div>
 
-<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.js"></script>
-<script src="assets/js/waypoints.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/swiper-bundle.js"></script>
-<script src="assets/js/slick.js"></script>
-<script src="assets/js/magnific-popup.js"></script>
-<script src="assets/js/counterup.js"></script>
-<script src="assets/js/wow.js"></script>
-<script src="assets/js/meanmenu.js"></script>
-<script src="assets/js/isotope-pkgd.js"></script>
-<script src="assets/js/imagesloaded-pkgd.js"></script>
-<script src="assets/js/charming.js"></script>
-<script src="assets/js/hover-reveal.js"></script>
-<script src="assets/js/tween-max.js"></script>
-<script src="assets/js/ajax-form.js"></script>
-<script src="assets/js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row">
+          <div class="col-xl-12 wow tpfadeUp" data-wow-duration="1s" data-wow-delay=".5s">
+            <div class="tp-service-button text-center pt-55">
+              <a class="tp-btn" href="services.html">View All Services <i class="far fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="tp-news-area black-bg fix">
+      <div class="container">
+        <div class="row align-items-end flex-wrap-reverse flex-md-wrap">
+          <div class="col-xl-6 col-lg-6 col-md-6">
+            <div class="tp-newsletter-left-img pt-60 p-relative wow tpfadeLeft" data-wow-duration=".3s"
+              data-wow-delay=".5s">
+              <div class="z-index"> <img src="assets/img/news/news-2.png" alt></div>
+              <div class="news-shape-img">
+                <img src="assets/img/creative/creative-circle-img.png" alt>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6">
+            <div class="tp-news-letter-section-box-two pt-135 pb-145 wow tpfadeUp" data-wow-duration=".5s"
+              data-wow-delay=".7s">
+              <h5 class="tp-subtitle">Need a Project ?</h5>
+              <h2 class="tp-title tp-white-text pb-10">Let's work together.</h2>
+              <a class="tp-btn-border" href="contact.html">Fix a Meeting </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="tp-project-area pt-120 pb-120 p-relative">
+      <div class="tp-project-shape-one">
+        <img src="assets/img/project/project-shape-2.png" alt>
+      </div>
+      <div class="tp-project-shape-two">
+        <img src="assets/img/project/project-shape-3.png" alt>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="project-section-box-two text-center pb-20">
+              <h5 class="tp-subtitle">Projects</h5>
+              <h2 class="tp-title">Creative work.</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-80">
+          <div class="col-10 p-0 text-center">
+            <div class="tp-project-tab-button masonary-menu">
+              <button class="active" data-filter="*"><span>Website</span></button>
+              <button data-filter=".cat2"><span>Landing Page</span></button>
+              <button data-filter=".cat3"><span>App</span></button>
+              <button data-filter=".cat4"><span>Designing</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="row grid gx-45">
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6  grid-item cat2 cat4">
+            <div class="tp-project-item-two p-relative mb-45">
+              <div class="project-one fix"><img class="w-100" src="assets/img/work/affinitysky.webp" alt></div>
+              <div class="tp-project-icon-two">
+                <a class="popup-image" href="assets/img/work/affinitysky.webp"><i class="fas fa-long-arrow-up"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 grid-item cta2 cat4">
+            <div class="tp-project-item-two p-relative mb-45">
+              <div class="project-one fix"> <img class="w-100" src="assets/img/work/aksharamevents.webp" alt></div>
+              <div class="tp-project-icon-two">
+                <a class="popup-image" href="assets/img/work/aksharamevents.webp"><i
+                    class="fas fa-long-arrow-up"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 grid-item cat2 cat4">
+            <div class="tp-project-item-two p-relative  mb-45">
+              <div class=" project-one fix"> <img class="w-100" src="assets/img/work/bollywoodbeta.webp" alt></div>
+              <div class="tp-project-icon-two">
+                <a class="popup-image" href="assets/img/work/bollywoodbeta.webp"><i
+                    class="fas fa-long-arrow-up"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 grid-item cat2 cat4">
+            <div class="tp-project-item-two  p-relative mb-45">
+              <div class="project-one fix"> <img class="w-100" src="assets/img/work/graspex.webp" alt></div>
+              <div class="tp-project-icon-two">
+                <a class="popup-image" href="assets/img/work/graspex.webp"><i class="fas fa-long-arrow-up"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 grid-item cat2 cat4">
+            <div class="tp-project-item-two  p-relative mb-45">
+              <div class="project-one fix"> <img class="w-100" src="assets/img/work/greenwatch.webp" alt></div>
+              <div class="tp-project-icon-two">
+                <a class="popup-image" href="assets/img/work/greenwatch.webp"><i class="fas fa-long-arrow-up"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 grid-item cat2 cat4">
+            <div class="tp-project-item-two  p-relative mb-45">
+              <div class="project-one fix"> <img class="w-100" src="assets/img/work/grubhosting.webp" alt></div>
+              <div class="tp-project-icon-two">
+                <a class="popup-image" href="assets/img/work/grubhosting.webp"><i class="fas fa-long-arrow-up"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 grid-item cat2 cat4">
+            <div class="tp-project-item-two  p-relative mb-45">
+              <div class="project-one fix"> <img class="w-100" src="assets/img/work/knits%26knots.webp" alt></div>
+              <div class="tp-project-icon-two">
+                <a class="popup-image" href="assets/img/work/knits%26knots.webp"><i
+                    class="fas fa-long-arrow-up"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 grid-item cat2 cat4">
+            <div class="tp-project-item-two  p-relative mb-45">
+              <div class="project-one fix"> <img class="w-100" src="assets/img/work/resettleworldwide.webp" alt></div>
+              <div class="tp-project-icon-two">
+                <a class="popup-image" href="assets/img/work/resettleworldwide.webp"><i
+                    class="fas fa-long-arrow-up"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="tp-project-button text-center mt-25">
+              <a class="tp-btn" href="projects.html">View All Work</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </main>
+
+
+  <footer>
+    <div class="tp-footer-area black-bg pt-130 pb-30">
+      <div class="container">
+        <div class="row wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".5s">
+          <div class="col-xl-6 col-lg-4 col-md-6">
+            <div class="tp-footer-widget">
+              <div class="tp-footer-widget__logo mb-30">
+                <a href="index.html"><img src="logo.png" alt></a>
+              </div>
+              <div class="tp-footer-widget__text mb-30">
+                <p>CodeServir is a family of futuristic solutions with complete End to End Web Development, App
+                  Development, Designing, UI/UX, Tech Consultation, Search Engine Optimization, Social Media Marketing,
+                  Content Creation, Cloud Solutios and many more services .</p>
+              </div>
+              <div class="tp-footer-widget__social-link">
+                <a target="_blank" href="https://twitter.com/CodeServir"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com/codeservir/"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/company/codeservir-technologies-private-limited/"><i
+                    class="fab fa-linkedin"></i></a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 d-flex justify-content-lg-center">
+            <div class="tp-footer-widget">
+              <div class="tp-footer-widget__title pb-15">
+                <h3 class="footer-title">Links</h3>
+              </div>
+              <div class="tp-footer-widget__list">
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="tp-footer-widget pl-20">
+              <div class="tp-footer-widget__title pb-15">
+                <h3 class="footer-title">Get in Touch</h3>
+              </div>
+              <div class="tp-footer-widget__list">
+                <ul>
+                  <li><strong>Call Us:</strong><br>
+                    <a href="tel:+919455791624"><i class="far flaticon-customer-support"></i> +91-9455791624</a><br>
+                    <a href="tel:+918386963382"><i class="far flaticon-customer-support"></i> +91-8386963382</a>
+                  </li>
+                  <li><strong>Email Us:</strong><br>
+                    <a href="#">
+
+                      <i>
+                        <span>
+                          info@codeservir.com ,
+
+                        </span>
+                      </i>
+                    </a>
+                    <a href="#">
+
+                      <i>
+                        <span>
+                          codeservir@gmail.com
+
+                        </span>
+                      </i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tp-copyright-area">
+        <div class="container">
+          <div class="copyright-border pt-40 wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-12">
+                <div class="tp-copyright-left text-lg-start text-start text-md-center">
+                  <p> © Copyright ©2023 Code Servir. All Rights Reserved.</p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-12">
+                <div class="tp-copyright-right text-start text-md-center text-lg-end">
+                  <a href="#">Cancellation & refund policy</a>
+                  <a href="#">Terms and conditions</a>
+                  <a href="#">Privacy policy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <button class="scroll-top scroll-to-target" data-target="html">
+    <i class="far fa-angle-double-up"></i>
+  </button>
+
+  <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/waypoints.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper-bundle.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/magnific-popup.js"></script>
+  <script src="assets/js/counterup.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/meanmenu.js"></script>
+  <script src="assets/js/isotope-pkgd.js"></script>
+  <script src="assets/js/imagesloaded-pkgd.js"></script>
+  <script src="assets/js/charming.js"></script>
+  <script src="assets/js/hover-reveal.js"></script>
+  <script src="assets/js/tween-max.js"></script>
+  <script src="assets/js/ajax-form.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- CPL START -->
+  <!-- Popup container -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <!-- Close button -->
+      <span class="close" onclick="closePopup()">&times;</span>
+      <!-- Popup title -->
+      <br />
+      <img src="cpl.png" alt="Banner Image" height="180px">
+      <h2>CPL Player Registration</h2>
+      <!-- Registration form -->
+      <form id="registrationForm" enctype="multipart/form-data" onsubmit="submitForm(event); return false;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="team">Team:</label>
+        <input type="text" id="team" name="team" required>
+        <label for="payment">Payment Screenshot:</label>
+        <input type="file" id="payment" name="payment" accept="image/*" required>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDT70iAk7U7ugDbFxhrCs9db8E8QlmyINM",
+      authDomain: "codeservir.firebaseapp.com",
+      databaseURL: "https://codeservir-default-rtdb.firebaseio.com",
+      projectId: "codeservir",
+      storageBucket: "codeservir.appspot.com",
+      messagingSenderId: "499927561307",
+      appId: "1:499927561307:web:1fab4785f0caf7ac9f3b7e",
+      measurementId: "G-T3DV0N8RLT"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    window.onload = function () {
+      openPopup();
+    };
+
+    // Function to open the popup
+    function openPopup() {
+      document.getElementById('popup').style.display = 'block';
+    }
+
+
+    // Function to close the popup
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    // Function to submit the registration form
+    console.error('dsfgdh');
+    function submitForm(event) {
+      // event.preventDefault();
+      console.error('dsfgdh');
+      const name = document.getElementById('name').value;
+      const team = document.getElementById('team').value;
+      const paymentFile = document.getElementById('payment').files[0];
+      console.log(name);
+      console.log(team);
+      console.log(paymentFile);
+      // Create a reference to the Firestore database
+      const db = firebase.firestore();
+      console.log('Firestore database:', db);
+
+      // Create a storage reference
+      const storageRef = firebase.storage().ref();
+      console.log('Storage reference:', storageRef);
+
+      // Upload the payment screenshot to Firebase Storage
+      const paymentRef = storageRef.child('payment_screenshots/' + paymentFile.name);
+      console.log('Payment reference:', paymentRef);
+      paymentRef.put(paymentFile)
+        .then((snapshot) => {
+          // Get the download URL for the payment screenshot
+          snapshot.ref.getDownloadURL().then((downloadURL) => {
+            // Add player registration data to Firestore
+            db.collection("registrations").add({
+              name: name,
+              team: team,
+              paymentScreenshot: downloadURL
+            })
+              .then(() => {
+                // Registration successful, close the popup
+                // closePopup();
+              })
+              .catch((error) => {
+                console.error("Error adding document: ", error);
+                alert("Error submitting registration");
+              });
+          });
+        })
+        .catch((error) => {
+          console.error("Error uploading payment screenshot: ", error);
+          alert("Error submitting registration");
+        });
+    }
+  </script>
+
+  <!-- CPL END -->
+
 </body>
 
 <!-- Mirrored from Codeservirservice.com/index by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 23 Sep 2023 08:15:35 GMT -->
+
 </html>
