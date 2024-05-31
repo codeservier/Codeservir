@@ -792,110 +792,32 @@
       <span class="close" onclick="closePopup()">&times;</span>
       <!-- Popup title -->
       <br />
-      <img src="cpl.png" alt="Banner Image" height="180px">
-      <h2>CPL Player Registration</h2>
+      <h2>Register for Internship & Training </h2>
       <!-- Registration form -->
-      <form id="registrationForm" enctype="multipart/form-data" onsubmit="submitForm(event); return false;">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="team">Team:</label>
-        <input type="text" id="team" name="team" required>
-        <label for="payment">Payment Screenshot:</label>
-        <input type="file" id="payment" name="payment" accept="image/*" required>
-        <br><br>
-        <input type="submit" value="Submit">
-      </form>
+      <div class="tp-header-yellow-button">
+        <a class="tp-btn-black" href="registration.html">Register Now</a>
+      </div>
     </div>
   </div>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
 
-    const firebaseConfig = {
-      apiKey: "AIzaSyDT70iAk7U7ugDbFxhrCs9db8E8QlmyINM",
-      authDomain: "codeservir.firebaseapp.com",
-      databaseURL: "https://codeservir-default-rtdb.firebaseio.com",
-      projectId: "codeservir",
-      storageBucket: "codeservir.appspot.com",
-      messagingSenderId: "499927561307",
-      appId: "1:499927561307:web:1fab4785f0caf7ac9f3b7e",
-      measurementId: "G-T3DV0N8RLT"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+  <script>
     window.onload = function () {
       openPopup();
     };
-
-    // Function to open the popup
     function openPopup() {
       document.getElementById('popup').style.display = 'block';
     }
-
 
     // Function to close the popup
     function closePopup() {
       document.getElementById('popup').style.display = 'none';
     }
-
-    // Function to submit the registration form
-    console.error('dsfgdh');
-    function submitForm(event) {
-      // event.preventDefault();
-      console.error('dsfgdh');
-      const name = document.getElementById('name').value;
-      const team = document.getElementById('team').value;
-      const paymentFile = document.getElementById('payment').files[0];
-      console.log(name);
-      console.log(team);
-      console.log(paymentFile);
-      // Create a reference to the Firestore database
-      const db = firebase.firestore();
-      console.log('Firestore database:', db);
-
-      // Create a storage reference
-      const storageRef = firebase.storage().ref();
-      console.log('Storage reference:', storageRef);
-
-      // Upload the payment screenshot to Firebase Storage
-      const paymentRef = storageRef.child('payment_screenshots/' + paymentFile.name);
-      console.log('Payment reference:', paymentRef);
-      paymentRef.put(paymentFile)
-        .then((snapshot) => {
-          // Get the download URL for the payment screenshot
-          snapshot.ref.getDownloadURL().then((downloadURL) => {
-            // Add player registration data to Firestore
-            db.collection("registrations").add({
-              name: name,
-              team: team,
-              paymentScreenshot: downloadURL
-            })
-              .then(() => {
-                // Registration successful, close the popup
-                // closePopup();
-              })
-              .catch((error) => {
-                console.error("Error adding document: ", error);
-                alert("Error submitting registration");
-              });
-          });
-        })
-        .catch((error) => {
-          console.error("Error uploading payment screenshot: ", error);
-          alert("Error submitting registration");
-        });
-    }
   </script>
 
-  <!-- CPL END -->
+
+  
 
 </body>
 
-<!-- Mirrored from Codeservirservice.com/index by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 23 Sep 2023 08:15:35 GMT -->
 
 </html>

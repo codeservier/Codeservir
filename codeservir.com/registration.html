@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop Registration Form</title>
+    <link rel="stylesheet" href="./validation.css" />
+    <script src="./validation.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script type="module">
+  
+  
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+  
+      const firebaseConfig = {
+        apiKey: "AIzaSyDT70iAk7U7ugDbFxhrCs9db8E8QlmyINM",
+        authDomain: "codeservir.firebaseapp.com",
+        databaseURL: "https://codeservir-default-rtdb.firebaseio.com",
+        projectId: "codeservir",
+        storageBucket: "codeservir.appspot.com",
+        messagingSenderId: "499927561307",
+        appId: "1:499927561307:web:1fab4785f0caf7ac9f3b7e",
+        measurementId: "G-T3DV0N8RLT"
+      };
+  
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+   
+  
+    </script>
+  
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Internship Registration Form</h1>
+      <div class="form-group">
+        <label for="firstName">First Name *</label>
+        <input type="text" id="firstName" name="firstName" />
+        <div class="labelbottommsg" id="firstNameError"></div>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name *</label>
+        <input type="text" id="lastName" name="lastName" />
+        <div class="labelbottommsg" id="lastNameError"></div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" />
+        <div class="labelbottommsg" id="emailerror"></div>
+      </div>
+      <div class="form-group">
+        <label for="address">Address *</label>
+        <input type="text" id="address" name="address" />
+        <div class="labelbottommsg" id="addresserror"></div>
+      </div>
+      <div class="form-group">
+        <label for="country">Country *</label>
+        <select id="country" name="country">
+          <option value="">Select</option>
+          <option value="US">United States</option>
+          <option value="India">India</option>
+          <option value="Austraila">Austraila</option>
+          <option value="China">China</option>
+          <option value="Nepal">Nepal</option>
+        </select>
+        <div class="labelbottommsg" id="countryerror"></div>
+      </div>
+      <div class="form-group">
+        <label for="state">State/Province *</label>
+        <select id="state" name="state">
+          <option value="">Select</option>
+          <option value="UP">UP</option>
+          <option value="Rajsthan">Rajsthan</option>
+          <option value="Gujrat">Gujrat</option>
+          <option value="Tamilnadu">Tamilnadu</option>
+        </select>
+        <div class="labelbottommsg" id="stateerror"></div>
+      </div>
+      <div class="form-group">
+        <label for="city">city*</label>
+        <select id="city" name="state">
+          <option value="">Select</option>
+          <option value="Lucknow">Lucknow</option>
+          <option value="kanput">kanput</option>
+          <option value="kushinagar">kushinagar</option>
+          <option value="gorakhpur">gorakhpur</option>
+        </select>
+        <div class="labelbottommsg" id="cityerror"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="zip">Zip/Postal Code *</label>
+        <input type="text" id="zip" name="zip" />
+        <div class="labelbottommsg" id="ziperror"></div>
+      </div>
+      <div id="favoriteCourse">
+        <label>Favorite Courses? *</label>
+        <label
+          ><input id="checkboxred" type="checkbox" name="color" value="Red" />
+          Red</label
+        >
+        <label
+          ><input id="checkboxred" type="checkbox" name="color" value="Green" />
+          Green</label
+        >
+        <label
+          ><input
+            id="checkboxred"
+            type="checkbox"
+            name="color"
+            value="Yellow"
+          />
+          Yellow</label
+        >
+        <label
+          ><input id="checkboxred" type="checkbox" name="color" value="Blue" />
+          Blue</label
+        >
+        <div class="labelbottommsg" id="checkboxError"></div>
+      </div>
+      <div class="radio-group">
+        <label>How did you hear about this event? *</label>
+        <label><input type="radio" /> Advertisement</label>
+        <label><input type="radio" /> Email Newsletter</label>
+        <label><input type="radio" /> Social Media</label>
+        <label
+          ><input type="radio" name="source" value="Referral" /> Referral</label
+        >
+        <div class="labelbottommsg" id="radioError"></div>
+      </div>
+      <button onclick="submit()">Submit</button>
+    </div>
+
+    <script></script>
+  </body>
+</html>
